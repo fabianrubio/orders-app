@@ -3,9 +3,9 @@ This is a web application for managing orders. It was built using Next.js, React
 
 ## Features
 
-Create an Order: Users can create a new order by filling out a form with the required fields such as customer name, product, quantity, and price.
-View Order Details: Users can view the details of a specific order, including the customer name, product, quantity, and price.
-Cancel an Order: Users can cancel an existing order by clicking on a cancel button.
+Create an Order: Users can create a new order by filling out a form with the required fields.
+View Order Details: Users can view the details of a specific order.
+Cancel an Order: Users can cancel an existing order by clicking on a cancel order button.
 
 ## Technologies Used
 
