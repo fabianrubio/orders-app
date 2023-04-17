@@ -28,13 +28,9 @@ NEXT_PUBLIC_PASSWORD: The password that the application uses to authenticate wit
 To run the application locally, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install the dependencies by running ```bash
-npm install
-``` in the root directory.
+2. Install the dependencies by running ```bash npm install``` in the root directory.
 3. Set the environment variables by creating a .env.local file in the root directory and adding the values for NEXT_PUBLIC_API_URL, NEXT_PUBLIC_USERNAME, and NEXT_PUBLIC_PASSWORD.
-4. Start the development server by running ```bash
-npm run dev
-```.
+4. Start the development server by running ```bash npm run dev ```.
 5. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
 Conclusion
