@@ -1,4 +1,4 @@
-## Orders Project
+# Orders Project
 This is a web application for managing orders. It was built using Next.js, React, Material-UI (Mui), Yup, Formik, and Axios.
 
 ## Features
