@@ -9,20 +9,20 @@ Cancel an Order: Users can cancel an existing order by clicking on a cancel orde
 
 ## Technologies Used
 
-Next.js: A popular React framework that provides server-side rendering and other features to build scalable applications.
-React: A JavaScript library for building user interfaces.
-Material-UI (Mui): A popular React UI framework that provides a set of pre-built components and styling options.
-Yup: A JavaScript schema validation library that helps validate form input data.
-Formik: A React library for building forms and managing form state.
-Axios: A JavaScript library for making HTTP requests.
-npm: A package manager for Node.js that is used to install and manage the project dependencies.
+- Next.js: A popular React framework that provides server-side rendering and other features to build scalable applications.
+- React: A JavaScript library for building user interfaces.
+- Material-UI (Mui): A popular React UI framework that provides a set of pre-built components and styling options.
+- Yup: A JavaScript schema validation library that helps validate form input data.
+- Formik: A React library for building forms and managing form state.
+- Axios: A JavaScript library for making HTTP requests.
+- npm: A package manager for Node.js that is used to install and manage the project dependencies.
 
 ## Environment Variables
 The application uses the following environment variables:
 
-NEXT_PUBLIC_API_URL: The URL of the API that the application uses to fetch and update order data.
-NEXT_PUBLIC_USERNAME: The username that the application uses to authenticate with the API.
-NEXT_PUBLIC_PASSWORD: The password that the application uses to authenticate with the API.
+NEXT_PUBLIC_API_URL= The URL of the API that the application uses to fetch and update order data.
+NEXT_PUBLIC_USERNAME= The username that the application uses to authenticate with the API.
+NEXT_PUBLIC_PASSWORD= The password that the application uses to authenticate with the API.
 
 ## Getting Started
 To run the application locally, follow these steps:
