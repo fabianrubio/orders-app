@@ -20,9 +20,9 @@ Cancel an Order: Users can cancel an existing order by clicking on a cancel orde
 ## Environment Variables
 The application uses the following environment variables:
 
-NEXT_PUBLIC_API_URL= The URL of the API that the application uses to fetch and update order data.
-NEXT_PUBLIC_USERNAME= The username that the application uses to authenticate with the API.
-NEXT_PUBLIC_PASSWORD= The password that the application uses to authenticate with the API.
+NEXT_PUBLIC_API_URL=URL
+NEXT_PUBLIC_USERNAME=username
+NEXT_PUBLIC_PASSWORD=password
 
 ## Getting Started
 To run the application locally, follow these steps:
