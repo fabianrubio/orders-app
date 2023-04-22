@@ -3,9 +3,9 @@ This is a web application for managing orders. It was built using Next.js, React
 
 ## Features
 
-Create an Order: Users can create a new order by filling out a form with the required fields.
-View Order Details: Users can view the details of a specific order.
-Cancel an Order: Users can cancel an existing order by clicking on a cancel order button.
+- Create an Order: Users can create a new order by filling out a form with the required fields.
+- View Order Details: Users can view the details of a specific order.
+- Cancel an Order: Users can cancel an existing order by clicking on a cancel order button.
 
 ## Technologies Used
 
@@ -35,5 +35,5 @@ To run the application locally, follow these steps:
 4. Start the development server by running ``` npm run dev ```.
 5. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-Conclusion
+### Conclusion
 This project is a simple example of how to build a web application using Next.js, React, Material-UI (Mui), Yup, Formik, and Axios. It demonstrates how to use these technologies to create a functional application that allows users to manage orders. By following the steps outlined in the Getting Started section, you can easily run the application locally and start experimenting with the code.
