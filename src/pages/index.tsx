@@ -4,13 +4,24 @@ import router from 'next/router';
 import api from '@/services/api';
 import { Order } from '@/model/types';
 import { useState } from 'react';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
 
 export default function Home() {
+  const [showMessage, setShowMessage] = useState<string | null>(null);
+
   const handleSubmit = async (data: OrderFormData) => {
     try {
-      const response = await api.post<{ Order: Order }>('/orders/create', data);
+      const response = await api.post<
+        | { Order: Order; Message?: undefined }
+        | { Message: string; Order?: undefined }
+      >('/orders/create', data);
 
-      router.push(`/${response.data.Order.ID}`);
+      if (response.data.Order) {
+        router.push(`/${response.data.Order.ID}`);
+      } else {
+        setShowMessage(response.data.Message);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -24,8 +35,18 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <OrderForm onSubmit={handleSubmit} />
+      <Snackbar
+        open={Boolean(showMessage)}
+        autoHideDuration={3000}
+        onClose={() => setShowMessage(null)}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+      >
+        <MuiAlert onClose={() => setShowMessage(null)} severity='error'>
+          {showMessage}
+        </MuiAlert>
+      </Snackbar>
+      ;
     </>
   );
 }

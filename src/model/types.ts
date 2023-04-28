@@ -32,4 +32,5 @@ export interface Order {
     Weight: number;
     OrderID: number;
   }[];
+  Message: string;
 }
